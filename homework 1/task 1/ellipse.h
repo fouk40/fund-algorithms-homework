@@ -6,11 +6,9 @@ class Ellipse {
         bool x_directed;
     
     public:
-        // Конструкторы
         Ellipse(double h = 0, double k = 0, double a = 0, double b = 0, bool x_directed = true);
         Ellipse(const Ellipse &e);
         ~Ellipse();
-        // Остальное
         void normalize_axis(double &a, double &b);
         double hyperparam();
         void print_vertexes();
