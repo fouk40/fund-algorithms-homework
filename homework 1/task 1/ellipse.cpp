@@ -13,7 +13,6 @@ Ellipse::Ellipse(double h, double k, double a, double b, bool x_directed) {
 }
 
 Ellipse::Ellipse(const Ellipse &e) {
-    normalize_axis(e.a, e.b);
     h = e.h;
     k = e.k;
     a = e.a;
