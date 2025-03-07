@@ -13,7 +13,7 @@ Ellipse::Ellipse(double h, double k, double a, double b, bool x_directed) {
 }
 
 Ellipse::Ellipse(const Ellipse &e) {
-    normalize_axis(a, b);
+    normalize_axis(e.a, e.b);
     h = e.h;
     k = e.k;
     a = e.a;
@@ -65,6 +65,7 @@ double Ellipse::eccentricity() {
 }
 
 void Ellipse::set_all(double h, double k, double a, double b, bool x_directed) {
+    normalize_axis(a, b);
     this->h = h;
     this->k = k;
     this->a = a;
