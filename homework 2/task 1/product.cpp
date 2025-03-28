@@ -8,7 +8,6 @@
 using namespace std;
 
 Product::Product() {
-    // Change this
     char tmp1[2];
     char tmp2[7];
     strcpy(code, "460");
@@ -23,7 +22,6 @@ Product::Product() {
 }
 
 Product::Product(const char description[51], double price, int quantity, double longitude, double lattitude) {
-    // Change this
     char tmp1[2];
     char tmp2[7];
     strcpy(code, "460");
@@ -80,7 +78,6 @@ void Product::normalize_lattitude(double &lattitude) {
 }
 
 void Product::set_code() {
-    // Change this
     char tmp1[2];
     char tmp2[7];
     strcpy(code, "460");

@@ -18,7 +18,6 @@ void input_max_products(int &n) {
 }
 
 Warehouse::Warehouse() {
-    // Change this
     char tmp[4];
     strcpy(id, "W");
     strcat(id, int_to_char(code++, tmp));
@@ -33,12 +32,10 @@ Warehouse::Warehouse() {
     max_size = 0;
 }
 
-// Соотносить значения координат и тип склада и нормализовывать их
 Warehouse::Warehouse(Category type, double longitude, double lattitude, int capacity, int max_size) {
     char tmp[4];
     strcpy(id, "W");
     strcat(id, int_to_char(code++, tmp));
-    // Change to normalize_type?
     normalize_position(longitude, lattitude, type);
     this->type = type;
     this->longitude = longitude;
